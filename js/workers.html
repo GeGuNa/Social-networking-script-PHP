@@ -1,0 +1,62 @@
+
+<script>
+	
+const myWorker = new Worker("my_task.js");
+
+myWorker.onmessage = (event) => {
+  console.log(`Worker said : ${event.data}`);
+};
+
+
+myWorker.onchange = () => {
+  myWorker.postMessage([first.value, second.value]);
+  console.log("Message posted to worker");
+};
+
+
+myWorker.onmessage = (e) => {
+  result.textContent = e.data;
+  console.log("Message received from worker");
+};
+
+myWorker.postMessage("ali");
+
+
+myWorker.terminate();
+myWorker.terminate();
+
+
+//my_task.js (the worker):
+
+importScripts(); /* imports nothing */
+importScripts("foo.js"); /* imports just "foo.js" */
+importScripts("foo.js", "bar.js"); /* imports two scripts */
+importScripts(
+  "//example.com/hello.js",
+); /* You can import scripts from other origins */
+
+
+
+
+
+postMessage("I'm working before postMessage('ali').");
+
+onmessage = (event) => {
+  postMessage(`Hi, ${event.data}`);
+};
+
+onmessage = (e) => {
+  console.log("Message received from main script");
+  const workerResult = `Result: ${e.data[0] * e.data[1]}`;
+  console.log("Posting message back to main script");
+  postMessage(workerResult);
+};
+
+
+onchange = () => {
+  myWorker.postMessage([first.value, second.value]);
+  console.log("Message posted to worker");
+};
+
+
+</script>

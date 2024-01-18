@@ -1,0 +1,174 @@
+body {
+overflow:hidden;
+}
+
+.mess_1 {
+display:flex;flex-direction:row;gap:10px;margin-top:10px;padding:10px;
+}
+
+.mess_2 {
+border-bottom:1px solid #dadada;
+}
+
+/*.mess_7 {
+border-bottom:1px solid #dadada;
+padding:10px;
+}*/
+
+.mess_7 {
+	min-height: 69px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom:1px solid #dadada;
+}
+
+
+
+.mess_3 {
+padding:14px;
+}
+
+
+.mess_4 {
+	flex-basis:20%;
+	border-right:1px solid #dadada;
+}
+
+.mess_5 {
+display:flex;
+width:90%;
+margin:auto;
+background:#fff;
+flex-direction:row;
+margin-top:20px;
+height: calc(95vh - 90px);
+overflow:hidden;
+}
+
+
+.mess_6 {
+	max-height: calc(100% - 58px); 
+	min-height: calc(100% - 58px); 
+	overflow: auto;
+}
+
+.mess_6:hover {
+    overflow: auto !important;
+}
+
+
+
+.mess_8 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+.mess_9 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
+.messs_10 {
+background: rgba(12, 188, 135, 1) !important;
+width: 12px;height: 12px;display: block;border-radius:50%;
+}
+
+
+.mess_11 {
+display:flex;justify-content:flex-start;gap:5px;flex-direction:row;align-items:center;
+}
+
+
+.mess_12 {
+    background-color: rgba(15, 111, 236, 1) !important;
+    padding:10px;border-radius:4px;
+    color:#fff;
+}
+
+
+.mess_13 {
+text-align:right;padding-right:50px;padding-top:5px;
+}
+
+
+.mess_14 {
+display:flex;justify-content:flex-end;padding-top:10px;padding-left:10px;gap:5px;
+}
+
+
+.messs_15 {
+width:100%;
+}
+
+.mess_16 {
+margin-top:2px;
+}
+
+
+.mess_17 {
+display:flex;justify-content:flex-start;padding-top:10px;padding-left:10px;gap:10px;
+}
+
+
+.mess_18 {
+background-color: rgba(238, 240, 242, 1) !important;
+padding:10px;
+border-radius:0.4rem;
+color: rgba(20, 25, 30, 1) !important;
+word-break: break-word;
+}
+
+.mess_19 {
+padding-left:50px;padding-top:5px;
+}
+
+
+.messs_20 {
+    max-height: calc(100% - 140px);
+    min-height: calc(100% - 140px);
+    overflow: auto;
+    padding-right:15px;
+    padding-left:10px;
+
+}
+
+.messs_20:hover {
+ 
+}
+
+
+.mess_21 {
+border-top:1px solid #dadada;
+}
+
+
+.mess_item {
+  flex: 1 1 auto;
+}
+
+
+.msg_mn12_z1 {
+    flex-basis: 25%;
+    border-right: 1px solid #dadada;
+    border-radius: 8px;
+}
+
+.msg_mn12_z2 {
+	flex-basis:75%;
+}
+
+
+.mmss_gg1 {
+height:70px;padding:0;overflow:hidden;border-top:1px solid #dadada;
+}
+
+.mmss_gg2 {
+	padding:0!important;
+}

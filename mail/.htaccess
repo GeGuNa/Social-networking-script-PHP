@@ -1,0 +1,9 @@
+AddDefaultCharset UTF-8
+
+php_value allow_url_fopen 1
+php_value default_charset utf-8
+php_value upload_max_filesize 50M
+php_value post_max_size 50M
+
+RewriteEngine on
+RewriteRule ^file/([A-z]+)/([A-z0-9.]+)/?$ file.php?folder=$1&hash=$2 [L,QSA]

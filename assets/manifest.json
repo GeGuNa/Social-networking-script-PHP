@@ -1,0 +1,24 @@
+{
+  "short_name": "last",
+  "name": "last.Ge",
+  "icons": [
+    {
+      "src": "https://",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "http://",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/?",
+  "background_color": "#202125",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#202125",
+  "description": "desc!"
+}

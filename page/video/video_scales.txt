@@ -1,0 +1,36 @@
+Player Background Thumbnail (480x360):
+https://i.ytimg.com/vi_webp/VIDEO_ID/0.webp
+https://i.ytimg.com/vi/VIDEO_ID/0.jpg
+
+
+Video frames thumbnails (120x90)
+Start: https//i.ytimg.com/vi_webp/VIDEO_ID/1.webp
+Middle: https://i.ytimg.com/vi_webp/VIDEO_ID/2.webp
+End: https//i.ytimg.com/vi_webp/VIDEO_ID/3.webp
+Start: https//i.ytimg.com/vi/VIDEO_ID/1.jpg
+Middle: https://i.ytimg.com/vi/VIDEO_ID/2.jpg
+End: https//i.ytimg.com/vi/VIDEO_ID/3.jpg
+
+
+Lowest quality thumbnail (120x90)
+https://i.ytimg.com/vi_webp/VIDEO_ID/default.webp
+https://i.ytimg.com/vi/VIDEO_ID/default.jpg
+
+Medium quality thumbnail (320x180)
+https://i.ytimg.com/vi_webp/VIDEO_ID/mqdefault.webp
+https://i.ytimg.com/vi/VIDEO_ID/mqdefault.jpg
+
+
+High quality thumbnail (480x360)
+https://i.ytimg.com/vi_webp/VIDEO_ID/hqdefault.webp
+https://i.ytimg.com/vi/VIDEO_ID/hqdefault.jpg
+
+
+Standard quality thumbnail (640x480)
+https://i.ytimg.com/vi_webp/VIDEO_ID/sddefault.webp
+https//i.ytimg.com/vi/VIDEO_ID/sddefault.jpg
+
+
+Unscaled thumbnail resolution
+https://i.ytimg.com/vi_webp/VIDEO_ID/maxresdefault.webp
+https://i.ytimg.com/vi/VIDEO_ID/maxresdefault.jpg

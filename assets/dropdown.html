@@ -1,0 +1,205 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+  
+
+  <title>CodePen - [A11Y] Accessible Dropdown Menus</title>
+
+    <link rel="canonical" href="https://codepen.io/srirachachacha/pen/VPKjjx">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+  
+  
+<style>
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500);
+
+*{font-family:'Work Sans', sans-serif;}
+
+*:focus{outline:1px dotted rgba(0,0,0,0.3) !important}
+
+h1, h2, h3, label {font-weight:400}
+p, a {font-weight:300;}
+
+h1 {font-size:30px;}
+h2 {font-size:28px; margin:45px 0 10px 0;}
+h3 {font-size:20px;}
+p, a {font-size:16px;}
+
+body{background:#fbfbfb; min-height:100vh;}
+
+.container-a {
+  max-width: 1750px;
+  margin:45px auto 45px auto;
+}
+
+.content-card {
+  min-height: 600px;
+  padding: 15px 30px;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 
+              0 0 4px 1px rgba(0, 0, 0, 0.02);
+}
+
+@media (max-width:767px){
+  .content-card {
+    padding: 15px 1vw;}
+}
+
+.title{
+  margin:-16px 0 0 0;
+}
+
+.title h1{
+  display:inline-block;
+  float:right;
+  margin:0 15px 0 0;
+  padding:10px 15px 7.5px 15px;
+  font-size:16px;
+  font-weight:400;
+  color:#fff;
+  background:#5c6bc0;
+  border-radius:0 0 1px 1px;
+  box-shadow:0px 1px 1px 0 rgba(0,0,0,0.2)
+}
+
+
+/*-------------------------------*/
+/*-------------------------------*/
+
+
+.dropdown-a{
+  margin:15px 0 0 0;
+}
+
+.dropdown-a button{
+  min-width:160px;
+  padding:7.5px 12.5px;
+  font-size:16px;
+  background:#f5f5f5;
+  border:none;
+  border-top:0px solid #f5f5f5;
+  border-bottom:1px solid #f5f5f5;
+  border-radius:2px;
+  box-shadow:0 2px 0 0 #ddd;
+}
+
+.dropdown-a button:hover,
+.dropdown-a button:focus{
+  background:#efefef;
+}
+
+.dropdown-a.open button{
+  border-top:1px solid #fff;
+  border-bottom:0px solid #f5f5f5;
+  box-shadow:0 1px 0 0 #ddd;
+}
+
+.dropdown-menu{
+  min-width:160px;
+  margin-top:1px;
+  padding:0;
+  background:#fcfcfc;
+  border:none;
+  border-radius:0 0px 2px 2px;
+  box-shadow:0 1px 2px 0 rgba(0,0,0,0.2);
+}
+.dropdown-menu li a,
+.dropdown-menu li h4{
+  margin:0;
+  padding:5px 12.5px;
+  font-size:14px;
+  color:#444;
+}
+
+.dropdown-menu li h4{
+  border-bottom:1px solid #eee
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+  <!-- Bootstrap CSS Linked in Settings -->
+
+
+
+<div class="container-fluid container-a">
+  
+  <div class="col-lg-6 col-lg-push-3 col-md-8 col-md-push-2 col-sm-10 col-sm-push-1 col-xs-12 content-card">
+    
+    <div class="title"><h1>A11Y Examples Series</h1></div>
+    
+    <h2>Basic Accessible Dropdown Menu</h2>
+    
+    <div class="dropdown-a dropdown">
+      
+      <button class="button-a dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Menu</button>
+      
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Menu Item 1</a></li>
+        <li><a class="dropdown-item" href="#">Menu Item 2</a></li>
+        <li><a class="dropdown-item" href="#">Menu Item 3</a></li>
+      </ul>
+      
+    </div>
+    
+    <br>
+    
+    <h2>Accessible Dropdown Menu w/ Headings</h2>
+    
+    <div class="dropdown-a dropdown">
+      
+      <button class="button-a dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Menu</button>
+      
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><h4 class="dropdown-header">Menu Header A</h4></li>
+        <li><a class="dropdown-item" href="#">Menu Item 1a</a></li>
+        <li><a class="dropdown-item" href="#">Menu Item 2a</a></li>
+        <li><a class="dropdown-item" href="#">Menu Item 3a</a></li>
+        <li><h4 class="dropdown-header">Menu Header B</h4></li>
+        <li><a class="dropdown-item" href="#">Menu Item 1b</a></li>
+        <li><a class="dropdown-item" href="#">Menu Item 2b</a></li>
+        <li><a class="dropdown-item" href="#">Menu Item 3b</a></li>
+      </ul>
+      
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+
+<!-- jQuery Linked in Settings  -->
+
+<!-- Bootstrap js Linked in Settings -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+
+
+
+</body></html>

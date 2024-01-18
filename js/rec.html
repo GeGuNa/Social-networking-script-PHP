@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello React!</title>
+    <script  src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script  src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+   <!-- <script src="script.js" type="text/babel"></script>-->
+  
+  
+  
+ <script>
+ 
+
+//let AudioContext = window.AudioContext || window.webkitAudioContext;
+//let audioContext = new AudioContext();
+//let source = audioContext.createMediaStreamSource(stream);
+ 
+ 
+ 
+function hasGetUserMedia() {
+  return !!(navigator.mediaDevices || navigator.getUserMedia || 
+           navigator.webkitGetUserMedia || navigator.mozGetUserMedia || 
+           navigator.msGetUserMedia);
+}
+ 
+ 
+ 
+function getUserMediaLegacy(constraints, successCallback, errorCallback) {
+  if (!hasGetUserMedia()) {
+    alert("Your browser doesn't support media device access.");
+    return;
+  }
+
+  if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+		navigator.mediaDevices.getUserMedia(constraints).then(successCallback).catch(errorCallback);
+  } else {
+    // Legacy API
+    const legacyAPI = (
+      navigator.getUserMedia ||
+      navigator.webkitGetUserMedia ||
+      navigator.mozGetUserMedia ||
+      navigator.msGetUserMedia
+    );
+
+    if (legacyAPI) {
+      legacyAPI.call(navigator, constraints, successCallback, errorCallback);
+    } else {
+      alert("Legacy getUserMedia API not available in this browser.");
+    }
+  }
+}
+ 
+ 
+ 
+function getUserMedia22Legac22y(constraints, successCallback, errorCallback) {
+	
+  if (!hasGetUserMedia()) {
+    alert("Your browser doesn't support media device access.");
+    return;
+  }
+
+  if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+	  
+		navigator.mediaDevices.getUserMedia(constraints).then(successCallback).catch(errorCallback);
+
+  } else {
+
+    let legacyAPI = (
+      navigator.getUserMedia ||
+      navigator.webkitGetUserMedia ||
+      navigator.mozGetUserMedia ||
+      navigator.msGetUserMedia
+    );
+
+    if (legacyAPI) {
+		legacyAPI.call(navigator, constraints, successCallback, errorCallback);
+    } else {
+		alert("Legacy getUserMedia API not available in this browser.");
+    }
+    
+    
+  }
+}
+
+
+function fff21(constraints, success, error) {
+	
+//   navigator.getUserMedia ||	
+	
+  navigator.usrMedia =
+   navigator.mediaDevices.getUserMedia ||
+   navigator.mozGetUserMedia || 
+   navigator.webkitGetUserMedia ||
+   navigator.msGetUserMedia;
+  const constraints3 = { audio: true, video: false};
+  return navigator.usrMedia(constraints3, success, error);
+ }
+
+
+ 
+ </script>  
+   
+
+<script type="text/babel">
+  
+  
+  
+  
+   
+   let mediaRecorder; 
+   let audioChunks = [];
+
+function AudioRecorder() {
+  const [recording, setRecording] = React.useState(false);
+  const [audioBlob, setAudioBlob] = React.useState(null);
+  const [audioUrl, setAudioUrl] = React.useState('');
+
+
+
+
+   
+          //document.addEventListener('keydown', () => mediaRecorder.start())
+
+          //document.addEventListener('keyup', () => mediaRecorder.stop())
+
+
+
+
+
+
+
+  const startRecording = () => {
+    audioChunks = [];
+    
+  
+    
+    
+    getUserMedia22Legac22y(
+    { audio: true, video: false },
+    (stream) => {
+        mediaRecorder = new MediaRecorder(stream);
+
+        mediaRecorder.ondataavailable = event => {
+          if (event.data.size > 0) {
+            audioChunks.push(event.data);
+          }
+        };
+        
+        
+        mediaRecorder.start();
+        setRecording(true);
+      },  (error) => {
+		  
+	alert(error)
+		  
+    console.error("Error accessing media devices:", error);
+  })
+
+  };
+
+  const stopRecording = () => {
+	  console.log(mediaRecorder)
+    //if (mediaRecorder && mediaRecorder.state === 'recording') {
+      mediaRecorder.stop();
+      mediaRecorder.onstop = () => {
+        const audioBlob = new Blob(audioChunks, { type: 'audio/mp3' });
+        const audioUrl =  (window.URL || window.webkitURL).createObjectURL(audioBlob);
+      //audioUrl.download = audioBlob || 'output.wav';
+   
+			const url = (window.URL || window.webkitURL).createObjectURL(audioBlob);
+			const link = document.createElement('a');
+			link.href = url;
+			link.innerHTML = 'download';
+			link.download = audioBlob || 'output.webm';
+			document.body.appendChild(link);    
+    
+        
+        
+        setAudioBlob(audioBlob);
+        setAudioUrl(audioUrl);
+        setRecording(false);
+      //};
+    }
+  };
+
+  return (
+    <div>
+      <h2>Audio Recorder</h2>
+      <button onClick={recording ? stopRecording : startRecording}>
+        {recording ? 'Stop Recording' : 'Start Recording'}
+      </button>
+      {audioBlob && (
+        <div>
+          <h3>Recorded Audio</h3>
+          <audio controls src={audioUrl} />
+        </div>
+      )}
+    </div>
+  );
+}
+   
+   
+   
+   
+   
+   ReactDOM.render(<AudioRecorder />, document.getElementById('root'));
+   
+   
+   </script>
+   
+   
+  </body>
+</html>

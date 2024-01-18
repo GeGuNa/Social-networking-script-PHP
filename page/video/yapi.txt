@@ -1,0 +1,215 @@
+array(4) {
+  ["kind"]=>
+  string(25) "youtube#videoListResponse"
+  ["etag"]=>
+  string(27) "O7uoumr5TKhN7AmGXo-BTos_P4s"
+  ["items"]=>
+  array(1) {
+    [0]=>
+    array(7) {
+      ["kind"]=>
+      string(13) "youtube#video"
+      ["etag"]=>
+      string(27) "qY-0T-XoE0fwcLU141TL1f5Pm28"
+      ["id"]=>
+      string(11) "RH2dkHpQu5E"
+      ["snippet"]=>
+      array(12) {
+        ["publishedAt"]=>
+        string(20) "2023-07-08T04:23:20Z"
+        ["channelId"]=>
+        string(24) "UCm7lHFkt2yB_WzL67aruVBQ"
+        ["title"]=>
+        string(92) "Biden Admits Russian Blitz Burnt Western Weapons; 'Sending Cluster Bombs Because...' | Watch"
+        ["description"]=>
+        string(1015) "The U.S. has been forced to admit the transfer of cluster bombs to Ukraine after initially denying it. The Joe Biden administration cited Ukraine's lack of munitions as the reason for the controversial aid. Washington claimed that the bombs are being given to Kyiv because it is running out of ordinary ammunition. Earlier, Moscow accused Washington of sending cluster munitions to Kyiv. Watch this report to understand what a cluster bomb is and why its use is controversial.
+
+#clusterbombs #joebiden #unitedstates #russia #ukraine #russiaukrainewar #russianarmy #america #ukrainecounteroffensive #russiaukrainelatest #ukrainecounteroffensiveupdatetoday #russianpresident #vladimirputin 
+
+Hindustan Times Videos bring you news, views and explainers about current issues in India and across the globe. We’re always excited to report the news as quickly as possible, use new technological tools to reach you better and tell stories with a 360 degree view to give you a better understanding of the world around you."
+        ["thumbnails"]=>
+        array(5) {
+          ["default"]=>
+          array(3) {
+            ["url"]=>
+            string(46) "https://i.ytimg.com/vi/RH2dkHpQu5E/default.jpg"
+            ["width"]=>
+            int(120)
+            ["height"]=>
+            int(90)
+          }
+          ["medium"]=>
+          array(3) {
+            ["url"]=>
+            string(48) "https://i.ytimg.com/vi/RH2dkHpQu5E/mqdefault.jpg"
+            ["width"]=>
+            int(320)
+            ["height"]=>
+            int(180)
+          }
+          ["high"]=>
+          array(3) {
+            ["url"]=>
+            string(48) "https://i.ytimg.com/vi/RH2dkHpQu5E/hqdefault.jpg"
+            ["width"]=>
+            int(480)
+            ["height"]=>
+            int(360)
+          }
+          ["standard"]=>
+          array(3) {
+            ["url"]=>
+            string(48) "https://i.ytimg.com/vi/RH2dkHpQu5E/sddefault.jpg"
+            ["width"]=>
+            int(640)
+            ["height"]=>
+            int(480)
+          }
+          ["maxres"]=>
+          array(3) {
+            ["url"]=>
+            string(52) "https://i.ytimg.com/vi/RH2dkHpQu5E/maxresdefault.jpg"
+            ["width"]=>
+            int(1280)
+            ["height"]=>
+            int(720)
+          }
+        }
+        ["channelTitle"]=>
+        string(15) "Hindustan Times"
+        ["tags"]=>
+        array(30) {
+          [0]=>
+          string(13) "Cluster bombs"
+          [1]=>
+          string(17) "cluster munitions"
+          [2]=>
+          string(18) "U.S. Cluster Bombs"
+          [3]=>
+          string(21) "Ukraine Cluster Bombs"
+          [4]=>
+          string(9) "Joe Biden"
+          [5]=>
+          string(13) "United States"
+          [6]=>
+          string(3) "USA"
+          [7]=>
+          string(6) "Russia"
+          [8]=>
+          string(7) "Ukraine"
+          [9]=>
+          string(11) "Ukraine War"
+          [10]=>
+          string(21) "Russia Ukraine Crisis"
+          [11]=>
+          string(18) "Russia Ukraine War"
+          [12]=>
+          string(23) "Russia Ukraine Conflict"
+          [13]=>
+          string(6) "Moscow"
+          [14]=>
+          string(4) "Kyiv"
+          [15]=>
+          string(21) "Kyiv Counteroffensive"
+          [16]=>
+          string(24) "Ukraine Counteroffensive"
+          [17]=>
+          string(13) "Leopard Tanks"
+          [18]=>
+          string(12) "Abrams Tanks"
+          [19]=>
+          string(15) "Patriot Systems"
+          [20]=>
+          string(8) "Kinzhals"
+          [21]=>
+          string(26) "Russian Hypersonic Missile"
+          [22]=>
+          string(20) "Ukraine Western Arms"
+          [23]=>
+          string(14) "Russia Vs NATO"
+          [24]=>
+          string(12) "Russia Vs US"
+          [25]=>
+          string(26) "Western Weapons in Ukraine"
+          [26]=>
+          string(6) "HIMARS"
+          [27]=>
+          string(7) "Bradley"
+          [28]=>
+          string(7) "US Army"
+          [29]=>
+          string(10) "US Weapons"
+        }
+        ["categoryId"]=>
+        string(2) "25"
+        ["liveBroadcastContent"]=>
+        string(4) "none"
+        ["defaultLanguage"]=>
+        string(5) "en-US"
+        ["localized"]=>
+        array(2) {
+          ["title"]=>
+          string(92) "Biden Admits Russian Blitz Burnt Western Weapons; 'Sending Cluster Bombs Because...' | Watch"
+          ["description"]=>
+          string(1015) "The U.S. has been forced to admit the transfer of cluster bombs to Ukraine after initially denying it. The Joe Biden administration cited Ukraine's lack of munitions as the reason for the controversial aid. Washington claimed that the bombs are being given to Kyiv because it is running out of ordinary ammunition. Earlier, Moscow accused Washington of sending cluster munitions to Kyiv. Watch this report to understand what a cluster bomb is and why its use is controversial.
+
+#clusterbombs #joebiden #unitedstates #russia #ukraine #russiaukrainewar #russianarmy #america #ukrainecounteroffensive #russiaukrainelatest #ukrainecounteroffensiveupdatetoday #russianpresident #vladimirputin 
+
+Hindustan Times Videos bring you news, views and explainers about current issues in India and across the globe. We’re always excited to report the news as quickly as possible, use new technological tools to reach you better and tell stories with a 360 degree view to give you a better understanding of the world around you."
+        }
+        ["defaultAudioLanguage"]=>
+        string(2) "en"
+      }
+      ["contentDetails"]=>
+      array(7) {
+        ["duration"]=> string(6) "PT5M6S"
+        ["dimension"]=>
+        string(2) "2d"
+        ["definition"]=>
+        string(2) "hd"
+        ["caption"]=>
+        string(5) "false"
+        ["licensedContent"]=>
+        bool(true)
+        ["contentRating"]=>
+        array(0) {
+        }
+        ["projection"]=>
+        string(11) "rectangular"
+      }
+      ["status"]=>
+      array(6) {
+        ["uploadStatus"]=>
+        string(9) "processed"
+        ["privacyStatus"]=>
+        string(6) "public"
+        ["license"]=>
+        string(7) "youtube"
+        ["embeddable"]=>
+        bool(true)
+        ["publicStatsViewable"]=>
+        bool(true)
+        ["madeForKids"]=>
+        bool(false)
+      }
+      ["statistics"]=>
+      array(4) {
+        ["viewCount"]=>
+        string(5) "23518"
+        ["likeCount"]=>
+        string(3) "518"
+        ["favoriteCount"]=>
+        string(1) "0"
+        ["commentCount"]=>
+        string(3) "819"
+      }
+    }
+  }
+  ["pageInfo"]=>
+  array(2) {
+    ["totalResults"]=>
+    int(1)
+    ["resultsPerPage"]=>
+    int(1)
+  }
+}
