@@ -65,7 +65,7 @@ if ($browser_detect->isMobile()) {
 }
 
 
-if (isset($_SESSION['version'])){
+if (isset($_SESSION['version'])) {
 	$browser = $_SESSION['version']; 
 } else { 
 	$browser = $_COOKIE['version'];

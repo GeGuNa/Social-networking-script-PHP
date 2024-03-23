@@ -188,8 +188,8 @@ class PDOORM
     
 }
 
-		
+		//($host, $dbname, $username, $password)
 
-$pdo = new PDOORM("localhost", "","","");
+$pdo = new PDOORM("localhost", "plast", "soc_ge","soc_ge");
 
 

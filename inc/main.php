@@ -2,7 +2,11 @@
 
 defined('in') or die('uups');
 
-?> <?php
+?> 
+
+
+
+<?php
 
 
 
