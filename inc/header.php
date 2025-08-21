@@ -43,7 +43,7 @@ $set['background'] = '00b85c';
 
 <meta property="og:title" content="Last.Ge social network" />
 <meta property="og:type" content="website" />
-<meta property="og:description"  content="last.ge - შემოგვიერთდი და შეიძინე მეგობრები." />
+<meta property="og:description"  content="zzzzzzz" />
 <meta property="og:site_name" content="Last" />
 
 
