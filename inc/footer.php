@@ -1,7 +1,5 @@
 <?php
-
 defined('in') or die('uups');
-
 ?>
 
 
